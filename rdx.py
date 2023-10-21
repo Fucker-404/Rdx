@@ -61,8 +61,8 @@ logo=("""
 \x1b[1;90m┃  \033[1;36m   \x1b[1;90m 
 \x1b[1;90m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘
 \033[1;96m═════════════════════════════════════════════
-\x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m: Rdx
-\x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;97m: \x1b[1;94m
+\x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m:Rdx
+\x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;56m:Fucker-404 \x1b[1;94m
 \x1b[1;36m{+} \x1b[1;93mTOOL / \x1b[1;92mSTATUS    \x1b[1;97m : \x1b[1;93mRANDOM / \x1b[1;92mACTIVE
 \x1b[1;36m{+} \x1b[1;90mTOOL VIRSION      \x1b[1;97m: \x1b[1;90m1.2.0
 \033[1;96m═════════════════════════════════════════════
